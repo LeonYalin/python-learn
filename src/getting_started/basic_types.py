@@ -1,17 +1,18 @@
+from ..util import print_cmd
+
+
 def creating_integers():
-    print("""
-  Creating integers:
-  - 10 -> 10 (regular)
-  - 0b10 -> 2 (binary)
-  - 0o10 -> 8 (oktal)
-  - 0x10 -> 16 (hex)
-  - int(3.5) -> 3, int("123") -> 123 (parseInt)
-  """)
+    print_cmd('Creating integers', """
+    - 10 -> 10 (regular)
+    - 0b10 -> 2 (binary)
+    - 0o10 -> 8 (oktal)
+    - 0x10 -> 16 (hex)
+    - int(3.5) -> 3, int("123") -> 123 (parseInt)
+    """)
 
 
 def creating_floats():
-    print("""
-    Creating floats:
+    print_cmd('Creating floats', """
     - 3.125 -> 3.125 (regular)
     - 3e8 -> 3000000008.0 (big)
     - 1.616e-35 -> 1.616e-35 (small)
@@ -21,23 +22,21 @@ def creating_floats():
 
 
 def creating_other_types():
-    print("""
-    Creating other types:
+    print_cmd('Creating other types', """
     - None, a = None, a is None (Null)
     - bool, a = False, bool(0) -> False, bool(1) -> True, bool("") -> False, bool([]) -> False, bool("False") -> True, bool("True") -> True
     """)
 
 
 def using_relational_operators():
-    print("""
+    print_cmd('Using relational operators', """
     The relational operators in Python are:
     ==, !=, <, >, <=, >=, -=, +=, *=, /=
     """)
 
 
 def using_if_else_blocks():
-    print("""
-    Using the if/else blocks:
+    print_cmd('Using the if/else blocks', """
     a = 2
     if a == 2:
         print("lala")
@@ -49,8 +48,7 @@ def using_if_else_blocks():
 
 
 def using_for_loops():
-    print("""
-    Using for loops:
+    print_cmd('Using for loops', """
     arr = [1, 2, 3]
     for num in arr:
         print(num) -> 1, 2, 3
@@ -61,8 +59,7 @@ def using_for_loops():
 
 
 def using_while_loops():
-    print("""
-    Using the while loops:
+    print_cmd('Using while loops', """
     a = 5
     while a > 0:
         response = input() # user input from keyboard
@@ -73,8 +70,7 @@ def using_while_loops():
 
 
 def using_strings():
-    print("""
-    Using strings:
+    print_cmd('Using strings', """
     - string literals: "aaa" or 'aaa'
     - multiline strings: '''multiline strings''' or "multiline\n strings\n"
     - raw strings: path = r'C:\Games\Heroes7' -> r"C:\\Games\\Heroes7"
@@ -85,8 +81,7 @@ def using_strings():
 
 
 def using_bytes():
-    print("""
-    Using bytes:
+    print_cmd('Using bytes', """
     - create: a = b'bytes data'
     - split: a.split(" ") -> [b'bytes', b'data']
     - encode: str = "привет".encode("UTF-8") -> b'\xd0\xbf...'
@@ -95,8 +90,7 @@ def using_bytes():
 
 
 def using_lists():
-    print("""
-    Using lists:
+    print_cmd('Using lists', """
     a = [1, 2, 3] -> [1, 2, 3], a[1] -> 2, a[1] = "orange" -> [1, "orange", 3]
     list('abc') -> ['a', 'b', 'c']
     arr = [ 'a',
@@ -106,8 +100,7 @@ def using_lists():
 
 
 def using_dicts():
-    print("""
-    Using dictionaries:
+    print_cmd('Using dicts', """
     - d = {}, d = {'a': 'aaa', 'b': 'bbb'}, b['a'] -> 'aaa', b['a'] = 'ccc'
     """)
 

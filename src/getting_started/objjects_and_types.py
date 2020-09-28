@@ -1,6 +1,8 @@
+from ..util import print_cmd
+
+
 def values_and_identity_equality():
-  print("""
-  Using identifiers:
+  print_cmd('Using identifiers', """
   - id is a unique identifier that every object in Python has (like pointer - memory address) 
   a = 16
   b = 'bbb'
@@ -18,8 +20,7 @@ def values_and_identity_equality():
 
 
 def using_function_arguments():
-    print("""
-    Using function arguments:
+    print_cmd('Using function arguments', """
     - default arguments
     foo(word, multiplier = 2):
         print(len(work) * 2) -> len(word) will give the word length
@@ -32,8 +33,7 @@ def using_function_arguments():
 
 
 def using_default_values():
-    print("""
-    Using default values:
+    print_cmd('Using default values', """
     - The default values are created only once and are mutable. Therefore, using the following will get surprising results:
     def addToList(list = []):
         list.append("lala")
@@ -49,8 +49,7 @@ def using_default_values():
     """)
 
 def using_scopes():
-    print("""
-    Using scopes:
+    print_cmd('Using scopes', """
     In python, there are 4 scopes:
     - Local -> inside the function
     - Enclosing -> inside enclosing function
@@ -74,7 +73,7 @@ def using_scopes():
 
 
 def inspecting_objects():
-    print("""
+    print_cmd('Inspecting objects', """
     To inspect an object, we can use som built-in commands:
     import module_name
     type(module_name) -> <class 'module'>
