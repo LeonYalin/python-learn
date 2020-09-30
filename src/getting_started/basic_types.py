@@ -50,9 +50,11 @@ def using_if_else_blocks():
 def using_for_loops():
     print_cmd('Using for loops', """
     arr = [1, 2, 3]
+
     for num in arr:
         print(num) -> 1, 2, 3
     obj = {'a': 'aaa', 'b': 'bbb'}
+
     for key in obj:
         print(key, obj[key]) -> 'a, 'aaa', 'b', 'bbb'
     """)

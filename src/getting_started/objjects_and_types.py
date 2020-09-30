@@ -24,6 +24,7 @@ def using_function_arguments():
     - default arguments
     foo(word, multiplier = 2):
         print(len(work) * 2) -> len(word) will give the word length
+
     --> foo("Hello")
     --> foo("Hello", 5) - order is important
     --> foo(word="Hello", multiplier=3), or foo(multiplier=3, word="Hello") - any order
@@ -40,6 +41,7 @@ def using_default_values():
         return list
     --> addToList() -> ['lala']
     --> addToList() -> ['lala', 'lala']
+
     To fix this, use only integers, strings or None as default parameters
         def addToList(list = None):
             if list == None:
@@ -55,6 +57,7 @@ def using_scopes():
     - Enclosing -> inside enclosing function
     - Global -> At the top level of the module
     - Built-in -> In the special Built-ins module
+
     Together, they for the "LEGB" rule.
     Scopes do not correspond to the code blocks and indentation (like in JavaScript)
 
@@ -78,6 +81,7 @@ def inspecting_objects():
     import module_name
     type(module_name) -> <class 'module'>
     dir (module_name) -> will show object attributes, such as properties and methods
+
     - __name__ can be used to get the function name
     - __doc__ can be used to get the function docstring 
     """)
