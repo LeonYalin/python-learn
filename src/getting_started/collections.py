@@ -67,12 +67,11 @@ def ranges():
     range(0, 10, 2) # will print 0, 2, 4, 6, 8
     list(range(5, 10)) # will create a list of [5, 6, 7, 8, 9]
 
-    If we need to use indexs in loops, use the enumerate() function:
-
     for tp in [123, 456, 78]:
         print(tp) # will print (0, 123), (1, 456), (2, 78)
 
-    for i, v in [123, 456, 78]: # use unpacking for readability
+    If we need to use indexs in loops, use the enumerate() function:
+    for i, v in enumerate([123, 456, 78]): # use unpacking for readability
         print(i, v)
     """)
 

@@ -32,6 +32,9 @@ def using_relational_operators():
     print_cmd('Using relational operators', """
     The relational operators in Python are:
     ==, !=, <, >, <=, >=, -=, +=, *=, /=
+
+    Using logical operators:
+    and, or, e.g. if 2 > 1 and 'a' != 'b' or 2 * 2 == 4:
     """)
 
 
