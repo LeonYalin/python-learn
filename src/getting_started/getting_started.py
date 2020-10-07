@@ -3,6 +3,7 @@ from .modularity import modularity_main
 from .objjects_and_types import objects_and_types_main
 from .collections import collections_main
 from .exceptions import exceptions_main
+from .iterables import iterables_main
 
 def getting_started_main():
     basic_types_main()
@@ -10,3 +11,4 @@ def getting_started_main():
     objects_and_types_main()
     collections_main()
     exceptions_main()
+    iterables_main()
