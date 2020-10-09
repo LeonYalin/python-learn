@@ -51,7 +51,7 @@ def generator_functions():
     next(g) # prints 3
     next(g) # raises StopIteration error
 
-    Complex axample;
+    Complex example;
     def first(count, iterable):
         counter = 0
         for item in iterable
