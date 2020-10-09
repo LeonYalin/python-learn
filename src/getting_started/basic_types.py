@@ -82,6 +82,11 @@ def using_strings():
     - get string chars: a = "aaa", a[0] -> a, type(a[0]) -> 'class str'
     - convert to string: str(123) -> "123" (toSting
     - type help(str) to get the list of all avaliable string methods
+
+    Use \ to split one-line string into multilpe lines: improved readability, e.g.
+    a = asda sd asd as dd \
+        asdasdasdasdasdasd\
+        asdasdsad
     """)
 
 
