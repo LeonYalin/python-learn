@@ -37,6 +37,20 @@ def namespaces_and_executable_packages():
     print_cmd('Namspaces and executable packages', """
     Namespace packages:
     These packages are splitted across multiple files and do not have the __init__,py file.
+
+    Sharing namespaces:
+    In order to share namespaces, we should organize code in separate folders with same names.
+    When importing, python will understand from which folder to import
+
+    Executable directories:
+    To make a directory executable (directory, not package), create a __main__.py file in it.
+
+    Executable .zip files:
+    Works same way as with directories, but we should zip the contents of the directory (not the directory itself).
+    This is an analog to .jar files in Java
+
+    Executable packages:
+    Same as with directories, but called with the -m flag, e.g. python -m package_dir
     """)
 
 
