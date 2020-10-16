@@ -54,7 +54,47 @@ def namespaces_and_executable_packages():
     """)
 
 
+def recommended_package_layout():
+    print_cmd('Recommended package layout', """
+    Python package shhould consist of:
+    - root directory (not package),
+    - README.rst file(README.MD analog), setup.py
+    - Common directories at the root level: docs/, src/, tests/ 
+    - Main app package inside src/
+
+    Setup.py example: (package.json analog)
+
+    import setuptools
+
+    setuptools.setup(
+        name='project_name,
+        version='1.0.0',
+        packages=setuptools.find_packages('src'),
+        package_dir={'': 'src'})
+
+    Implementing Pligins:
+    There are 2 ways to implement plugins: with Namespace Packages and with setuptools.py
+    First implementation uses the library pkgutil and importlib libraries to add modules
+    Second extents setup.py options using setuptools extension points
+
+    Package distribution:
+    We use PyPi - Python Package index to share paxkages (npm analog). Than, we can install it using "pip install package_name"
+
+    There are two kinds of packages: "Built" and "Source" packages.
+    - Built package can be placed directly into python directory and it is ready to use
+    - Package format can be .zip, .tar or .whl (wheel).
+    - The command "bdist" is used to build a built package. Also, the "whell" package need to be installe first
+
+    - Source packages contain al the sources for the package, and can be built (a.k.a complied) using different configurations due to our needs.
+    - The command "sdist" is used to build the source package
+
+    To upload a package to the PyPi, we need to use the "twine" package.
+    Than, we use "twine upload package_name" to upload the package
+    """)
+
+
 def organizing_larger_programs_main():
     creating_packages()
     using_packages()
     namespaces_and_executable_packages()
+    recommended_package_layout()
